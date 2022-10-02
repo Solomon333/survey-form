@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title"> feedback survey </h1>
+  <p id="description"> let us know what your thought on this website:</p>
+    <form id="survey-form" action="https://formspree.io/f/xnqlrpyp" method="POST">
+       <label for="name" id="name-label">Full name</label>
+        <input type="text" name="name" id="name" placeholder="your name" required="" class="inputForm" autocomplete="off">
+        <label for="email" id="email-label">Email</label>
+       <input type="email" name="email" id="email"
+              placeholder="email@domain.tld" required="" class="inputForm" autocomplete="off">
+        <label for="number" id="number-label">Age</label>
+       <input type="number" name="number" id="number"
+              placeholder="your age" min="18" max="99" class="inputForm" autocomplete="off">
+  <br>
+<label for="question1"> <b> How many hours do you usalley spend online?</b></label>
+<br>
+  <br>
+<input id="time-spent" type="radio" id="one" name="time" value="one">
+<label for="one">0-2</label>
+  <br>
+<input id="time-spent" type="radio" id="two" name="time" value="two">
+<label for="two">2-4</label>
+  <br>
+<input id="time-spent" type="radio" id="three" name="time" value="three">
+<label for="three">4-6</label>
+  <br> 
+<input id="time-spent" type="radio" id="four" name="time" value="four">
+<label for="four">6-9</label>
+  <br>
+  <br>
+  <br>
+<label for="question2"> <b> How visually apealing is our website?</label>
+  <br>
+  <br>    
+  <input type="checkbox" id="checkbox" name="extrem" value="extrem"> 
+<label for="extrem" >Extremely appealing</label>
+  <br>    
+  <input type="checkbox" id="checkbox" name="very" value="very"> 
+<label for="very" >Very appealing</label>
+  <br>      
+  <input type="checkbox" id="checkbox" name="somewhat" value="somewhat">
+  <label for="somewhat" >Somewhat appealing</label>
+<br>
+  <input type="checkbox" id="checkbox" name="not-so" value="not-so"> 
+<label for="not-so" >Not So appealing</label>
+    <br>
+  <br>
+          <label for="dropdown" >rate this website:</label>
+  <br>     
+  <br>
+  <select name="dropdown" id="dropdown" class="drop-dwn">
+          <option value="choose" selected="" disabled
+                  >choose</option>
+          <option value="good">good</option>
+          <option value="very good">very good</option>
+          <option value="excelent">excelent</option>
+          <option value="perfect">perfect</option>
+        </select>
+  <br>
+  <br>
+          <label id="textarea">Comment:</label>
+  <br>        
+  <br>
+<textarea id="comment" placeholder="add comment here" rows="5" cols="45"></textarea>
+  <br>
+  <br>
+   <input type="submit" id="submit" class="submitBtn">
+  <br>    
+</form>   
+  
+</body>
+</html>
