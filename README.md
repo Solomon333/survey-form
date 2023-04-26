@@ -1,1 +1,7 @@
-feedback survey form buit using html form and styled with css.
+SURVEY-FORM.
+
+- HTML5 AND CSS3
+
+- user send Feedback
+
+
